@@ -15,7 +15,7 @@ cout<<"enter number "<<endl;
 string input;
 cin >> input;
 
-auto it = word_to_number.find(input);
+map<string, int>::const_iterator it = word_to_number.find(input);
 if (it != word_to_number.end()) {
   cout << it->second << endl;
 } else {
@@ -23,6 +23,3 @@ if (it != word_to_number.end()) {
 }
 
 }
-
-
-// why doe this not work on mac terminal?

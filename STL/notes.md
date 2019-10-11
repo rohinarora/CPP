@@ -8,3 +8,4 @@
 ```
   if !(a<b) && !(b<a) //-> implies a==b
 ```
+* map.find returns forward iterator by default (iterator or const_iterator)
