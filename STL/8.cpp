@@ -21,7 +21,7 @@ bool operator<(const Point & lhs, const Point & rhs) {
   if (lhs.y > rhs.y) return false;
   return false;
 }
-// can use mutiple operator< definations for Point
+// can use mutiple "operator<"" definations for Point and then choose which to call when you actually use the set
 int main() {
   set<Point> s;
 
