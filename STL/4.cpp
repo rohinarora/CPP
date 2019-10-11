@@ -17,8 +17,8 @@ int main() {
   }
   cout << endl;
 
-  vector<int> c2 = { 7, 8, 9 };
-  c2.insert(c2.begin() + 2, c.begin(), c.end());
+  // a new way of list constructor
+  list<int> c2(c.begin(), c.end()); //works as long as c holds integers
 
   for (const auto & e: c2) {
     cout << e << " ";

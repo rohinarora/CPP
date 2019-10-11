@@ -12,12 +12,13 @@ int main() {
   ++ it2;
   -- it2;
   it2 = it2 + 2;
+  cout << *it2 << endl;
 
   for (auto it = c.begin(); it != c.end(); ++ it) {
     cout << *it << " ";
   }
   cout << endl;
-  for (const auto & e: c) {
+  for (const auto & e: c) { // why does this have to be const auto?
     cout << e << " ";
   }
   cout << endl;

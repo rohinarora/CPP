@@ -16,6 +16,7 @@ map<string, string> m =
 
 for (auto it=m.begin(); it!=m.end();++it){
   cout<<(*it).first<<" "<<(*it).second<<" "<<endl; //maps exist in pairs.
+  //cout <<*it<<endl; //won't work
 }
 
 

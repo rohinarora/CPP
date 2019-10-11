@@ -17,7 +17,9 @@ int main() {
   }
   cout << endl;
 
-  list<int> c2(c.begin(), c.end()); //works as long as c holds integers
+  // insert at a specific location
+  vector<int> c2 = { 7, 8, 9 };
+  c2.insert(c2.begin() + 2, c.begin(), c.end());
 
   for (const auto & e: c2) {
     cout << e << " ";

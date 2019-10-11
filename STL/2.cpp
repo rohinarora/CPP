@@ -3,8 +3,6 @@
 #include <list>
 using namespace std;
 
-// make reverse iterator work
-
 int main() {
   vector<int> c = { 1, 2, 3, 4, 5 };
 
@@ -12,6 +10,12 @@ int main() {
     cout << *it << " ";
   }
   cout << endl;
+
+  for (vector<int>::reverse_iterator it = c.rbegin(); it != c.rend(); ++ it) {
+    cout << *it << " ";
+  }
+  cout << endl;
+
   for (const auto & e: c) {
     cout << e << " ";
   }
@@ -20,7 +24,24 @@ int main() {
     cout << *it << " ";
   }
   cout << endl;
+
+  for (auto it = c.rbegin(); it != c.rend(); ++ it) {
+    cout << *it << " ";
+  }
+  cout << endl;
+
   list<int> c1 = { 1, 2, 3, 4, 5 }; //doubly LL
+
+  for (list<int>::reverse_iterator it = c1.rbegin(); it != c1.rend(); ++ it) {
+    cout << *it << " ";
+  }
+  cout << endl;
+
+  for (list<int>::iterator it = c1.begin(); it != c1.end(); ++ it) {
+    cout << *it << " ";
+  }
+  cout << endl;
+
   for (auto it = c1.begin(); it != c1.end(); ++ it) {
     cout << *it << " ";
   }

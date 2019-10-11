@@ -1,3 +1,5 @@
+//iterators
+
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -10,5 +12,4 @@ int main() {
   ++ it;
   cout << *it << endl; // deference
   //cout << it << endl; doesn't work
-
 }
